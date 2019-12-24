@@ -1,6 +1,5 @@
-BIND_PID1="1022 145f"
-BIND_BDF1="0000:27:00.3"
-
+BIND_PID1="1022 7914"
+BIND_BDF1="0000:10:00.0"
 sudo modprobe vfio-pci
 echo "$BIND_PID1" > /sys/bus/pci/drivers/vfio-pci/new_id
 echo "$BIND_BDF1" > /sys/bus/pci/devices/$BIND_BDF1/driver/unbind
